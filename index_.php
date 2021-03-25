@@ -21,6 +21,8 @@ $cnx = Connexion ::getInstance($dsn, $user, $password);
     <link rel="stylesheet" href="./admin/lib/css/style.css"/>
     <link rel="stylesheet" href="./admin/lib/css/custom.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./admin/lib/js/functions_jquery.js"></script>
 </head>
 
 <body  >

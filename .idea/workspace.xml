@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00bd6d87-c466-43e9-97cf-f5003271fadc" name="Default Changelist" comment="" />
+    <list default="true" id="00bd6d87-c466-43e9-97cf-f5003271fadc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/AdminBD.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Categorie.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/CategorieBD.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Client.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/ClientBD.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Produit.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/loginAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/actuality.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/galerie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/inscription.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/magasin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index_.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/admin_liste_include.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/admin_liste_include.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/pg_connect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/accueil_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/accueil_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/galerie.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/inscription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/js/functions_jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/Admin.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_.php" beforeDir="false" afterPath="$PROJECT_DIR$/index_.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accueil.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +45,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -21,7 +53,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1pLtlOJIzSYYGw2ZaUPTSDrLJGy" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../commerce" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -47,24 +81,12 @@
       <recent name="C:\laragon\www\BarberShop\admin\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\BarberShop\lib\php" />
+      <recent name="C:\laragon\www\BarberShop\admin\pages" />
+      <recent name="C:\laragon\www\BarberShop\admin\dumps\vues" />
+      <recent name="C:\laragon\www\BarberShop\admin\dumps\DumpBD" />
       <recent name="C:\laragon\www\BarberShop\pages" />
-      <recent name="C:\laragon\www\BarberShop\admin\lib\php" />
-      <recent name="C:\laragon\www\BarberShop" />
+      <recent name="C:\laragon\www\BarberShop\admin\dumps\plpgsql" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,7 +98,18 @@
       <updated>1614974351676</updated>
       <workItem from="1614974353310" duration="51034000" />
       <workItem from="1615318815909" duration="9358000" />
-      <workItem from="1615548706721" duration="28400000" />
+      <workItem from="1615548706721" duration="31142000" />
+      <workItem from="1615931221479" duration="16343000" />
+      <workItem from="1615990047043" duration="19157000" />
+      <workItem from="1616141324420" duration="1322000" />
+      <workItem from="1616275874485" duration="641000" />
+      <workItem from="1616371368208" duration="24442000" />
+      <workItem from="1616617863274" duration="5534000" />
+      <workItem from="1616626471834" duration="2343000" />
+      <workItem from="1616628902351" duration="181000" />
+      <workItem from="1616629144203" duration="29000" />
+      <workItem from="1616629234381" duration="1728000" />
+      <workItem from="1616694867388" duration="558000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,25 @@
 Body{
-    background-color:SaddleBrown;
+    background-color:black;
 
+}
+.lien{
+    color:#000;
+    font-size: 120%;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+#container{
+
+    color:black;
+    background-color:beige;
+    background-image:url('admin/images/banniere.png');
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
