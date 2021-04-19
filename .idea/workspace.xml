@@ -2,36 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00bd6d87-c466-43e9-97cf-f5003271fadc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/AdminBD.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Categorie.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/CategorieBD.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Client.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/ClientBD.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/Produit.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/article.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/loginAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/actuality.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/galerie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/inscription.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/magasin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/ajax/ajaxUpdateProduit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/lib/php/verifier_connexion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/disconnect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/gestion_produits.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/page404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/jquery.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index_.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index_.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index_.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/lib/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/lib/php/admin_liste_include.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/admin_liste_include.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/js/functions_jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/js/functions_jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/admin_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/Admin.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/Admin.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/AdminBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/AdminBD.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/ProduitBD.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/lib/php/pg_connect.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/pages/accueil_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/accueil_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/galerie.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/inscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/js/functions_jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/classes/Admin.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index_.php" beforeDir="false" afterPath="$PROJECT_DIR$/index_.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/client.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/lib/php/ajax/ajaxDetailProduit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/loginAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/php/public_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/php/public_menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/inscription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -88,6 +80,27 @@
       <recent name="C:\laragon\www\BarberShop\admin\dumps\plpgsql" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="article.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/BarberShop/admin/pages/article.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.article.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -109,11 +122,20 @@
       <workItem from="1616628902351" duration="181000" />
       <workItem from="1616629144203" duration="29000" />
       <workItem from="1616629234381" duration="1728000" />
-      <workItem from="1616694867388" duration="558000" />
+      <workItem from="1616694867388" duration="1808000" />
+      <workItem from="1616741610713" duration="1052000" />
+      <workItem from="1617017273290" duration="18828000" />
+      <workItem from="1617174376440" duration="638000" />
+      <workItem from="1617367100777" duration="654000" />
+      <workItem from="1618516762813" duration="501000" />
+      <workItem from="1618572457491" duration="13077000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BarberShop$article_php.dat" NAME="article.php Coverage Results" MODIFIED="1617045862629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

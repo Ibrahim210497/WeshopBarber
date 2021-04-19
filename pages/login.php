@@ -25,8 +25,6 @@
                     </div>
                     <button class="w-80 btn btn-lg btn-primary" type="submit">Sign in</button>
 
-
-                    <p class="mt-5 mb-3 text-muted">Connexion</p>
                 </form>
             </main>
     </div>

@@ -26,6 +26,7 @@
                             <strong>Infos</strong>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./index_.php?page=jquery.php">jquery</a></li>
                                 <li><a class="dropdown-item" href="./index_.php?page=contact.php">A Propos de nous</a></li>
                                 <li><a class="dropdown-item" href="./index_.php?page=actuality.php">Infos covid</a></li>
                                 <li><hr class="dropdown-divider"></li>
@@ -35,7 +36,8 @@
 
                         <li class="nav-item">
                             <a class="btn btn-outline-primary text-light" href="./index_.php?page=login.php"
-                               aria-current="page"><strong>Connexion</strong> </a>
+                               aria-current="page"><strong>Connexion</strong>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-outline-primary text-light" href="./index_.php?page=inscription.php"

@@ -1,0 +1,7 @@
+button,input{
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 100%;
+    border: 1px dotted #999;
+    border-radius: 0;
+}

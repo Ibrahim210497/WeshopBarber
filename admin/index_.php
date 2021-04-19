@@ -26,14 +26,8 @@ $cnx = Connexion::getInstance($dsn, $user, $password);
 <body>
 <div id="page" class="container">
     <header class="img_header">
-        <nav>
-            <?php
-            $path = "./lib/php/header.php";
-            if (file_exists($path)) {
-                include($path);
-            }
-            ?>
-        </nav>
+        <a href="index_.php? page=disconnect.php">Déconnexion</a>
+
     </header>
     <section id="colGauche">
         <nav>
