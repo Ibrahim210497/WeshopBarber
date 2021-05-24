@@ -1,5 +1,8 @@
+
+
 <footer>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-secondary">
+
         <img src="./admin/images/logo1.png" alt="logo"/>
         <h5 class="card-title text-light"><strong>SUIVEZ-NOUS SUR NOS RESEAUX</strong></h5>
         <a class="navbar-brand" href="#">
@@ -46,6 +49,7 @@
                     </div>
                 </div>
             </div>
+
     </nav>
     <section class="pt-2 bg-primary text-light">
         <div class="container text-center">
@@ -53,6 +57,10 @@
                 <li><strong>© 2020 V’s BARBERSHOP • WEBSITE MAGIC BY PIERRE NELL</strong></li>
             </div>
         </div>
+
     </section>
 
+
+
 </footer>
+

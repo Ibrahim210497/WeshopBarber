@@ -1,31 +1,54 @@
-
-
-
-
-
-<div class="card-body bg-dark">
+<div class="card-body bg-dark ">
     <div class="card-body bg-dark">
         <div class="container bg-light">
-            <body class="text-center">
+            <?php
 
-            <main class="form-signin">
-                <form>
+            if (isset($_POST['submit'])) {
+                extract($_POST, EXTR_OVERWRITE);
+                $cl = new ClientBD($cnx);
+                $client = $cl->getClient($email, $pass_clt);
+                if ($client!=0) {
+                    $_SESSION['id_clt'] = $email;
+                    $_SESSION['client'] = 'id';
+                    print "Soyez le Bienvenue chez nous " .$_SESSION['id_clt'];
+                    ?>
+                    <meta http-equiv="refresh" ; content="0;URL=./index_.php?page=accueil.php">
+                    <?php
+                } else {
+                    $message = "Identifiants incorrects";
+                }
+            }
+            ?>
 
-                    <img class="mb-4" src="./admin/images/profil.jpg" alt="" width="100" height="100">
 
-                    <h1 class="h3 mb-3 fw-normal">Se connecter</h1>
-                    <label for="inputUser" class="visually-hidden">User name</label>
-                    <input type="user" id="inputUser" class="form-control" placeholder="User name" required autofocus>
-                    <label for="inputPassword" class="visually-hidden">Password</label>
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="post">
+                <fieldset>
+                    <div class="mb-3 text-center">
+                        <img class="mb-4" src="./admin/images/profil.jpg" alt="" width="100" height="100">
+                        <h2>Connexion Client</h2>
+                        <label for="email" class="visually-hidden">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required
+                               autofocus>
+
+                        <div class="mb-3 text-center">
+                            <label for="pass_clt" class="visually-hidden">Password</label>
+                            <input type="pass_clt" id="pass_clt" name="pass_clt" class="form-control" placeholder="Password"
+                                   required autofocus>
+                        </div>
+
+                    </div>
+
                     <div class="checkbox mb-3">
                         <label>
                             <input type="checkbox" value="remember-me"> Remember me
                         </label>
                     </div>
-                    <button class="w-80 btn btn-lg btn-primary" type="submit">Sign in</button>
-
-                </form>
-            </main>
+                    <div class="text-center">
+                        <button class="w-80 btn name btn-lg btn-primary rounded-pill " name="submit" type="submit">
+                            Se connecter
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </div>
-</div>

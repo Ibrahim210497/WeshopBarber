@@ -12,7 +12,7 @@ class Connexion
             try {
                 //on essaie d'instancier un objet PDO
                 self::$_instance = new PDO($dsn, $user, $password);
-                print 'Connecté';
+                //print 'Connecté';
             } catch (PDOException $e) {
                 print "Echec  : " . $e->getMessage();
             }

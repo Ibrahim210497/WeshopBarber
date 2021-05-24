@@ -1,19 +1,22 @@
-<h2>Ajax</h2>
+<h3>Ajax</h3>
 <?php
 $prod = new ProduitBD($cnx);
 $liste = $prod->getAllProduit();
 $nbr=count($liste);
+//var_dump($liste);
 ?>
 
 <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">
-    <label for="id">Identifiant : </label>
+
+    <label for="id"><mark>Trouver un produit : </mark></label>
+
     <select name="choix produit" id="choix_produit">
         <option value =" ">Choisissez</option>
         <?php
         for($i=0; $i<$nbr; $i++)
         {
             ?>
-            <option value=" <?php print $liste[$i]->id_produit;?>">
+            <option value="<?php print $liste[$i]->id_produit;?>">
                 <?php print $liste[$i]->nom_produit;?>
             </option>
             <?php
@@ -22,7 +25,7 @@ $nbr=count($liste);
     </select>
     <input type="submit" name="submit_id" value="Chercher " id="submit_id">
 </form>
-<div class="card-group" id="infoProduit">
+<div class="card-group te" id="infoProduit">
     <div class="card" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title"></h5>
@@ -36,3 +39,4 @@ $nbr=count($liste);
         </div>
     </div>
 </div>
+

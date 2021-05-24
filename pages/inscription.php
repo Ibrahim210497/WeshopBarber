@@ -1,83 +1,93 @@
-<div class="container bg-light">
-<form class="row g-3">
-    <div class="col-md-4">
-        <label for="validationServer01" class="form-label">Nom </label>
-        <input type="text" name="nom" class="form-control is-valid" id="validationServer01" value="Mark" required>
-        <div class="valid-feedback">
-            Looks good!
-        </div>
-    </div>
-    <div class="col-md-4">
-        <label for="validationServer02" class="form-label">Prenom</label>
-        <input type="text"name="prenom" class="form-control is-valid" id="validationServer02" value="Otto" required>
-        <div class="valid-feedback">
-            Looks good!
-        </div>
-    </div>
+<?php
+$client = new ClientBD($cnx);
+if (isset($_GET['inscription'])) {
+    //var_dump($_GET);
+    extract($_GET, EXTR_OVERWRITE);
 
-    <div class="col-md-4">
-        <label for="validationServerUsername" class="form-label">adresse mail</label>
-        <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend3">@</span>
-            <input type="text" name="login" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                Please choose a username.
+
+    ?>
+    <pre><?php //var_dump($_GET); ?></pre><?php
+    if (!empty($nom) && !empty($prenom) && !empty($rue) && !empty($cp) && !empty($localite) && !empty($telephone) && !empty($email) && !empty($pass_clt) && !empty($matricule)) {
+
+        $retour = $client->ajout_client($nom, $prenom, $rue, $cp, $localite, $telephone, $email, $pass_clt, $matricule);
+        print "client ajouté avec succes!";
+        // print "retour : ".$retour;
+
+    }
+
+}
+
+
+?>
+
+
+<div class="card ">
+    <div class="card-header  bg-success">
+        <h2>Incription</h2>
+    </div>
+    <div class="card-body">
+        
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card bg-dark ">
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card bg-dark text-white">
+
+                    <form class="row g-3" method="get" action="<?php print $_SERVER['PHP_SELF']; ?>" id="formInscription">
+                        <!--
+                        <div class="col-md-12">
+                            Exemple à effacer <input type="text" id="recup" >
+                        </div>
+                        -->
+                        <div class="col-md-2">
+                            <label for="matricule" class="form-label">Matricule</label>
+                            <input type="text" class="form-control" id="matricule" name="matricule">
+                        </div>
+                        <div class="col-md-4 ">
+                            <label for="nom" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="nom" name="nom">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="prenom" class="form-label">Prenom</label>
+                            <input type="text" class="form-control" id="prenom" name="prenom">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="rue" class="form-label">Rue</label>
+                            <input type="text" class="form-control" id="rue" name="rue">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="cp" class="form-label">Code postal</label>
+                            <input type="number" class="form-control" id="cp" name="cp">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="localite" class="form-label">Localité</label>
+                            <input type="text" class="form-control" id="localite" name="localite">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="telephone" class="form-label">Telephone</label>
+                            <input type="text" class="form-control" id="telephone" name="telephone">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="pass_clt" name="pass_clt">
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-success text-left" id="inscription" name="inscription">
+                                S'inscrire
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-md-6">
-        <label for="validationServer03" class="form-label">Password</label>
-        <input type="text" name="pass_clt" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-        <div id="validationServer03Feedback" class="invalid-feedback">
-            Please provide a valid password.
-        </div>
-    </div>
-    <div class="col-md-6">
-        <label for="validationServer03" class="form-label">Rue</label>
-        <input type="text" name="rue" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-        <div id="validationServer03Feedback" class="invalid-feedback">
-            Please provide a valid city.
-        </div>
-    </div>
-    <div class="col-md-3">
-        <label for="validationServer04" class="form-label">Code postal</label>
-        <select class="form-select is-invalid" name="cp" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-            <option selected disabled value="">Choose...</option>
-            <option>...</option>
-        </select>
-        <div id="validationServer04Feedback" class="invalid-feedback">
-            Please select a valid state.
-        </div>
-    </div>
-    <div class="col-md-3">
-        <label for="validationServer05" class="form-label">Localité</label>
-        <input type="text" name="localité" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-        <div id="validationServer05Feedback" class="invalid-feedback">
-            Please provide a valid zip.
-        </div>
-    </div>
-    <div class="col-md-3">
-        <label for="validationServer05" class="form-label">télephone</label>
-        <input type="text" name="tel" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-        <div id="validationServer05Feedback" class="invalid-feedback">
-            Please provide a valid tel.
-        </div>
-    </div>
-
-
-    <div class="col-12">
-        <div class="form-check">
-            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-            <label class="form-check-label" for="invalidCheck3">
-                Agree to terms and conditions
-            </label>
-            <div id="invalidCheck3Feedback" class="invalid-feedback">
-                You must agree before submitting.
-            </div>
-        </div>
-    </div>
-    <div class="col-12">
-        <button class="btn btn-primary" type="submit">Submit form</button>
-    </div>
-</form>
 </div>

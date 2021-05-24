@@ -34,6 +34,9 @@
                             </ul>
                         </li>
 
+                        <?php
+                        if(!isset($_SESSION['client'])){
+                            ?>
                         <li class="nav-item">
                             <a class="btn btn-outline-primary text-light" href="./index_.php?page=login.php"
                                aria-current="page"><strong>Connexion</strong>
@@ -44,11 +47,42 @@
                                class="btn btn-primary"><strong>Inscription</strong></a>
 
                         </li>
+                        <?php
+                        }
+                        ?>
+                        <?php
+                        if(isset($_SESSION['client'])){
+                            ?>
+
+                            <a class="btn btn-outline-primary text-light" href="./index_.php?page=panier.php"
+                               class="btn btn-primary"><strong>Panier</strong></a>
+
+                            <div class="dropdown">
+                                <button class="btn-outline-success   btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Connecté
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                                    <li><a class="dropdown-item bg-light" href=" ">  <img class="mb-4" src="./admin/images/profil.jpg" alt="" width="25" height="25">
+                                            <?php print " ".$_SESSION['id_clt'];?></a></li>
+                                    <li><a class="dropdown-item" href="./admin/index_.php?page=disconnect.php"><img class="mb-4" src="./admin/images/deco.jpg" alt="" width="25" height="25">Déconnexion</a></li>
+                                </ul>
+                            </div>
+
+
+
+                            <?php
+
+                        }
+                        ?>
+
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success"  type="submit">Search</button>
                     </form>
+
+
                 </div>
             </div>
 

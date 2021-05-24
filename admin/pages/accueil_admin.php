@@ -1,4 +1,4 @@
-<h2>page administration</h2>
+
 <div class="card-body ">
     <div class="card-body bg-dark">
         <div class="container bg-light">
@@ -10,6 +10,9 @@
                 if ($admin) {
                     $_SESSION['admin'] = 1;
                     print'vous etes bien connecté';
+                    ?>
+                    <meta http-equiv="refresh"; content="0;URL=./index_.php?page=article.php">
+                  <?php
                 } else {
                     $message = "Identifiants incorrects";
                 }
@@ -25,8 +28,8 @@
             <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="post">
                 <fieldset>
                 <div class="mb-3 text-center">
-                <img class="mb-4" src="./admin/images/profil.jpg" alt="" width="100" height="100">
-
+                <img class="mb-4" src="./images/profil.jpg" alt="" width="100" height="100">
+                    <h2>Connexion Admin</h2>
                     <label for="login" class="visually-hidden">login</label>
                     <input type="login" id="login" name="login" class="form-control" placeholder="login" required autofocus>
                 </div>

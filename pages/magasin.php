@@ -19,25 +19,15 @@ $nbr = count($liste)
                 ?>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img src="./admin/images/<?php print $liste[$i]->image; ?>" alt="image"/>
-
+                        <img loading="lazy" src="./admin/images/<?php print $liste[$i]->image; ?>" alt="image"/>
                         <div class="card-body">
                             <p class="card-text">
-                                <?php
-                                print $liste[$i]->nom_produit;
-                                print '<br>';
-                                print $liste[$i]->description;
-                                print '<br>';
-                                print 'Prix  : '. $liste[$i]->prix .'€';
-                                print '<br>';
-                                print '<strong>Stock :</strong> '. $liste[$i]->stock;
-
-                                ?>
+                                <?php print $liste[$i]->description; ?>
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <i class=" btn-group"></i>
-                                    <button type="buton" class="btn btn-outline-secondary">Acheter</button>
+                                <div class="btn-group" id="remove_a">
+                                    <button data-id="<?php print $liste[$i]->id_produit;?>" data-bs-toggle="modal"
+                                            data-bs-target="#info_produit" class="info_produit"> Détails </button>
                                 </div>
                             </div>
                         </div>
@@ -47,5 +37,8 @@ $nbr = count($liste)
             }
             ?>
         </div>
+        <?php
+        include('./pages/info_produit.php');
+        ?>
     </div>
 </div>
